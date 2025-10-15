@@ -252,6 +252,115 @@ The chosen technology stack enables the project to deliver a scalable, secure, a
 Each technology integrates seamlessly with the others, supporting efficient development workflows, maintainable codebases, and reliable deployment processes.
 
 
+# Database Design
+
+## Overview
+The database design underpins the functionality of the booking platform, ensuring efficient data management, relational integrity, and scalability. The schema is structured around five core entities—**Users**, **Properties**, **Bookings**, **Payments**, and **Reviews**—each representing a key component of the system’s business logic.
+
+---
+
+## Key Entities and Relationships
+
+### 1. Users
+**Description:**  
+Represents individuals who interact with the platform, including property owners and guests.
+
+**Key Fields:**
+- **id:** Unique identifier for each user.  
+- **name:** Full name of the user.  
+- **email:** User’s email address (used for authentication).  
+- **password_hash:** Encrypted password for secure login.  
+- **role:** Defines the user type (e.g., host, guest, admin).
+
+**Relationships:**
+- A user can **own multiple properties**.  
+- A user can **make multiple bookings**.  
+- A user can **post multiple reviews**.
+
+---
+
+### 2. Properties
+**Description:**  
+Represents listings created by users offering accommodations for booking.
+
+**Key Fields:**
+- **id:** Unique property identifier.  
+- **user_id:** References the owner (User).  
+- **title:** Property title or name.  
+- **location:** Address or city of the property.  
+- **price_per_night:** Cost per night for booking.  
+- **description:** Detailed information about the property.
+
+**Relationships:**
+- Each property **belongs to one user (owner)**.  
+- A property can **have multiple bookings**.  
+- A property can **receive multiple reviews**.
+
+---
+
+### 3. Bookings
+**Description:**  
+Captures reservation details made by users for specific properties.
+
+**Key Fields:**
+- **id:** Unique booking identifier.  
+- **user_id:** References the guest who made the booking.  
+- **property_id:** References the property being booked.  
+- **check_in:** Start date of the booking.  
+- **check_out:** End date of the booking.  
+- **status:** Indicates booking state (e.g., pending, confirmed, cancelled).
+
+**Relationships:**
+- Each booking **belongs to one user (guest)**.  
+- Each booking **belongs to one property**.  
+- A booking can **generate one payment record**.
+
+---
+
+### 4. Payments
+**Description:**  
+Stores details of financial transactions made during bookings.
+
+**Key Fields:**
+- **id:** Unique payment identifier.  
+- **booking_id:** References the related booking.  
+- **amount:** Total payment made.  
+- **payment_method:** Method used (e.g., credit card, PayPal).  
+- **status:** Indicates payment completion (e.g., success, failed, pending).
+
+**Relationships:**
+- Each payment **belongs to one booking**.  
+- A booking can **have one or more associated payment attempts**.
+
+---
+
+### 5. Reviews
+**Description:**  
+Represents feedback left by users who have completed a stay at a property.
+
+**Key Fields:**
+- **id:** Unique review identifier.  
+- **user_id:** References the author of the review.  
+- **property_id:** References the reviewed property.  
+- **rating:** Numeric rating score (e.g., 1–5).  
+- **comment:** Written feedback from the user.  
+
+**Relationships:**
+- Each review **belongs to one user**.  
+- Each review **belongs to one property**.
+
+---
+
+## Entity Relationships Summary
+- **User ↔ Property:** One-to-Many (a user can own multiple properties).  
+- **User ↔ Booking:** One-to-Many (a user can make multiple bookings).  
+- **Property ↔ Booking:** One-to-Many (a property can have multiple bookings).  
+- **Booking ↔ Payment:** One-to-One or One-to-Many (each booking can have one or more payment records).  
+- **Property ↔ Review:** One-to-Many (a property can have multiple reviews).  
+- **User ↔ Review:** One-to-Many (a user can write multiple reviews).
+
+---
+
 ## Summary
-This database schema ensures that all major interactions—such as property manag>
+This database schema ensures that all major interactions—such as property management, booking, payment processing, and review submission—are efficiently managed through well-defined relationships. The design promotes scalability, data integrity, and simplified querying for analytics and reporting.
 
