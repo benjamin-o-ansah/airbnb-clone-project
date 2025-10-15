@@ -198,3 +198,55 @@ QA Engineers safeguard the project’s stability and user satisfaction. By catch
 
 ## Summary
 Defining and adhering to clear team roles ensures that backend development remains structured, efficient, and aligned with the overall project objectives. Collaboration among backend developers, database administrators, DevOps engineers, and QA engineers forms the backbone of a robust, secure, and high-performing application.
+
+
+# Technology Stack
+
+## Overview
+This project leverages a modern and scalable technology stack designed to support a robust, secure, and high-performing application. Each technology serves a specific purpose within the architecture, ensuring efficiency, maintainability, and smooth collaboration between backend services and frontend interfaces.
+
+---
+
+### 1. Django
+A high-level Python web framework used for building the core backend infrastructure and RESTful API endpoints. Django provides built-in support for authentication, ORM (Object Relational Mapping), and secure data handling, ensuring rapid and structured development.
+
+---
+
+### 2. Django REST Framework (DRF)
+An extension of Django that simplifies the creation and management of RESTful APIs. It provides serialization tools, authentication mechanisms, and flexible permissions to efficiently expose data and services to the frontend.
+
+---
+
+### 3. PostgreSQL
+A robust and open-source relational database used for data persistence and storage. PostgreSQL ensures high reliability, strong data integrity, and advanced query capabilities for handling complex data structures.
+
+---
+
+### 4. GraphQL
+A query language for APIs that allows clients to request exactly the data they need. GraphQL improves efficiency in data retrieval and reduces over-fetching or under-fetching, enhancing frontend performance and developer productivity.
+
+---
+
+### 5. Celery
+An asynchronous task queue used for background processing. In this project, Celery handles tasks such as sending email notifications, processing payments, and other time-consuming operations outside the main request cycle.
+
+---
+
+### 6. Redis
+An in-memory data store used for caching, session management, and as a message broker for Celery. Redis improves application performance by reducing database load and enabling faster data access.
+
+---
+
+### 7. Docker
+A containerization tool that packages the application and its dependencies into lightweight containers. Docker ensures consistency across development, testing, and production environments, simplifying deployment and scalability.
+
+---
+
+### 8. CI/CD Pipelines
+Automated Continuous Integration and Continuous Deployment pipelines that manage testing, building, and deploying code changes. CI/CD ensures code quality, reduces manual errors, and accelerates the release process.
+
+---
+
+## Summary
+The chosen technology stack enables the project to deliver a scalable, secure, and high-performance platform.
+Each technology integrates seamlessly with the others, supporting efficient development workflows, maintainable codebases, and reliable deployment processes.
