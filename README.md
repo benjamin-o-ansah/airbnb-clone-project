@@ -143,3 +143,58 @@ Provides users with essential site information, navigation links, and branding e
 
 ## Importance of Component Reusability
 Designing with reusable UI components promotes visual consistency, reduces redundancy, and accelerates development. Each component is structured to follow a standardized pattern, allowing for efficient updates, easier maintenance, and a seamless user experience throughout the platform.
+
+
+# Team Roles
+
+## Overview
+The project’s success depends on effective collaboration between specialized technical roles. Each team member contributes unique expertise to ensure the backend architecture is scalable, secure, and aligned with project goals. The roles described below combine best practices from the project overview and established industry standards.
+
+---
+
+### 1. Backend Developer
+**Responsibilities:**
+- Implements and maintains API endpoints that connect the frontend with backend services.  
+- Develops server-side logic, integrates third-party services, and ensures API security.  
+- Works closely with frontend developers to ensure smooth data exchange and consistent user experience.  
+
+**Contribution to the Project:**
+Backend Developers are the core builders of application functionality. They ensure all business logic operates efficiently and that backend systems support scalability, performance, and maintainability.
+
+---
+
+### 2. Database Administrator (DBA)
+**Responsibilities:**
+- Designs, manages, and optimizes database schemas for efficient data storage and retrieval.  
+- Oversees indexing, query optimization, and backup strategies.  
+- Ensures data integrity, security, and performance through proactive monitoring and maintenance.  
+
+**Contribution to the Project:**
+The Database Administrator plays a critical role in maintaining data reliability and performance. Their work ensures the backend systems can handle growing user demands without compromising speed or accuracy.
+
+---
+
+### 3. DevOps Engineer
+**Responsibilities:**
+- Manages deployment pipelines, CI/CD automation, and server infrastructure.  
+- Monitors application performance and uptime using modern observability tools.  
+- Implements scaling strategies, load balancing, and security measures for production environments.  
+
+**Contribution to the Project:**
+DevOps Engineers ensure the backend operates smoothly in all environments. Their automation and monitoring practices help maintain system reliability, minimize downtime, and enable continuous delivery of updates.
+
+---
+
+### 4. QA Engineer
+**Responsibilities:**
+- Develops and executes test plans for backend services, APIs, and integrations.  
+- Performs functional, regression, and load testing to identify and resolve defects.  
+- Ensures the backend meets all quality benchmarks before deployment.  
+
+**Contribution to the Project:**
+QA Engineers safeguard the project’s stability and user satisfaction. By catching issues early in the development cycle, they enhance product reliability and ensure backend systems meet performance and security expectations.
+
+---
+
+## Summary
+Defining and adhering to clear team roles ensures that backend development remains structured, efficient, and aligned with the overall project objectives. Collaboration among backend developers, database administrators, DevOps engineers, and QA engineers forms the backbone of a robust, secure, and high-performing application.
