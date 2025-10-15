@@ -410,3 +410,100 @@ This system fosters transparency and trust by enabling users to share authentic 
 ### 7. Database Optimizations
 The backend employs **indexing** for faster query performance and **caching** to minimize database load and improve system responsiveness.  
 These optimizations ensure that frequently accessed data, such as property listings and user sessions, are retrieved quickly, enhancing the overall performance and scalability of the platform.
+
+# API Security
+
+## Overview
+Security is a fundamental aspect of the project’s backend infrastructure. The system implements multiple layers of protection to ensure data integrity, safeguard user information, and secure financial transactions. By enforcing strong authentication, authorization, and traffic control mechanisms, the API upholds the confidentiality, availability, and reliability of all interactions.
+
+---
+
+## Key Security Measures
+
+### 1. Authentication
+**Description:**  
+All endpoints that handle sensitive operations require user authentication using secure token-based methods such as JWT (JSON Web Tokens) or OAuth2.  
+**Purpose:**  
+Ensures that only verified users can access protected resources, preventing unauthorized account access and protecting personal data.
+
+---
+
+### 2. Authorization
+**Description:**  
+Role-based access control (RBAC) will be applied to define permissions and limit actions based on user roles (e.g., admin, host, guest).  
+**Purpose:**  
+Prevents users from performing unauthorized actions such as modifying other users’ data or accessing restricted system endpoints.
+
+---
+
+### 3. Rate Limiting
+**Description:**  
+Implements API rate limiting to control the number of requests a client can make within a specific time frame.  
+**Purpose:**  
+Protects the system from denial-of-service (DoS) attacks, excessive API calls, and resource abuse, ensuring fair usage and consistent performance for all users.
+
+---
+
+### 4. Data Encryption
+**Description:**  
+All sensitive data, including passwords and payment details, will be encrypted in transit (using HTTPS/TLS) and at rest within the database.  
+**Purpose:**  
+Prevents unauthorized interception or exposure of private data, ensuring secure communication between clients and servers.
+
+---
+
+### 5. Input Validation and Sanitization
+**Description:**  
+All user inputs are validated and sanitized to prevent common web vulnerabilities such as SQL injection, cross-site scripting (XSS), and command injection.  
+**Purpose:**  
+Maintains system integrity by ensuring only clean, expected data is processed by the application.
+
+---
+
+### 6. Secure Payment Handling
+**Description:**  
+Payment processing is integrated with trusted third-party gateways following PCI DSS (Payment Card Industry Data Security Standard) compliance.  
+**Purpose:**  
+Protects users’ financial data and ensures that all payment transactions are handled through secure, verified channels.
+
+---
+
+## Importance of Security Across the Project
+
+- **Protecting User Data:** Strong authentication and encryption mechanisms prevent data leaks and identity theft.  
+- **Securing Payments:** Adhering to financial security standards ensures all transactions are legitimate and confidential.  
+- **Maintaining Trust:** Transparent and reliable security practices build user confidence and platform credibility.  
+- **Ensuring Compliance:** Following security best practices helps align with industry regulations and data protection laws.  
+
+---
+
+# CI/CD Pipeline
+
+## Overview
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for automating the software development lifecycle. They ensure that code changes are automatically built, tested, and deployed, reducing manual intervention and minimizing human error. By integrating CI/CD, the project maintains high code quality, consistent deployments, and faster delivery cycles.
+
+---
+
+## Importance of CI/CD in This Project
+Implementing a CI/CD pipeline helps streamline the development process by:
+- **Automating Builds and Tests:** Each code commit triggers automated tests to catch bugs early in development.  
+- **Ensuring Reliable Deployments:** Code changes are deployed in a controlled, repeatable manner to staging or production environments.  
+- **Enhancing Team Efficiency:** Developers can focus on building features while the pipeline manages integration and deployment tasks.  
+- **Reducing Deployment Errors:** Continuous monitoring and rollback mechanisms ensure stable and predictable releases.
+
+---
+
+## Tools and Technologies
+The following tools can be used to set up the CI/CD pipeline for this project:
+- **GitHub Actions:** Automates workflows such as testing, building, and deploying the application directly from the repository.  
+- **Docker:** Containerizes the application to ensure consistency across development, testing, and production environments.  
+- **Docker Compose:** Orchestrates multi-container setups for backend, frontend, and database services.  
+- **AWS / DigitalOcean / Render:** Used for deploying and hosting the application in a scalable cloud environment.  
+- **pytest / Jest:** For running automated backend and frontend tests during the CI stage.  
+
+---
+
+## Summary
+The CI/CD pipeline ensures continuous integration, testing, and delivery of updates with minimal downtime and improved reliability. By automating the deployment process, the project achieves faster iterations, higher quality control, and greater scalability for future growth.
+
+
