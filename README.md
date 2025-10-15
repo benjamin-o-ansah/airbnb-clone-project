@@ -94,3 +94,52 @@ The success of this project depends on cross-functional collaboration among vari
 | **DevOps Engineers** | Manage deployment processes, CI/CD pipelines, and server infrastructure; oversee performance monitoring. | Facilitate smooth and automated deployments, enhance reliability, and maintain continuous integration efficiency. |
 | **Product Owner** | Define project requirements, prioritize feature development, and represent the needs of stakeholders and end users. | Aligns the development team with business objectives, ensuring that the product delivers real value and meets user expectations. |
 | **Scrum Master** | Facilitate agile ceremonies, remove blockers, and support effective collaboration within the team. | Promotes efficiency and transparency within the agile process, ensuring consistent progress and team morale. |
+
+
+# UI Component Patterns
+
+## Overview
+The application’s UI components are designed to be reusable, consistent, and adaptable across various pages. By establishing a component-based design system, the development team can ensure maintainability, scalability, and a cohesive user experience.
+
+---
+
+## Planned Components
+
+### 1. Navbar
+**Purpose:**  
+Serves as the main navigation element across the application, providing users with quick access to key pages and actions.
+
+**Features:**
+- **Logo:** Represents the brand identity and serves as a home navigation link.  
+- **Search Bar:** Allows users to search for properties quickly and efficiently.  
+- **User Navigation:** Provides access to profile, bookings, and authentication actions (login/logout).  
+- **Responsive Menu:** Ensures seamless usability across mobile, tablet, and desktop devices.
+
+---
+
+### 2. Property Card
+**Purpose:**  
+Displays summarized property information within listing grids, promoting visual consistency and quick browsing.
+
+**Features:**
+- **Property Image:** High-quality thumbnail representing the property.  
+- **Basic Details:** Includes price, location, and rating for quick overview.  
+- **Favorite Button:** Allows users to save preferred properties.  
+- **Responsive Layout:** Adjusts dynamically across screen sizes for optimal presentation.
+
+---
+
+### 3. Footer
+**Purpose:**  
+Provides users with essential site information, navigation links, and branding elements that appear consistently across all pages.
+
+**Features:**
+- **Site Links:** Quick access to key pages such as About, Contact, and Privacy Policy.  
+- **Company Information:** Brief company details or mission statement.  
+- **Social Media Links:** Direct access to company social profiles for engagement.  
+- **Copyright Information:** Legal and ownership acknowledgment.
+
+---
+
+## Importance of Component Reusability
+Designing with reusable UI components promotes visual consistency, reduces redundancy, and accelerates development. Each component is structured to follow a standardized pattern, allowing for efficient updates, easier maintenance, and a seamless user experience throughout the platform.
