@@ -75,3 +75,22 @@ Identifying design properties from mockups allows developers and designers to:
 - Reduce design inconsistencies and rework during implementation.  
 
 Accurate documentation of these properties enables faster development, better scalability, and a uniform user experience across devices and platforms.
+
+
+# Project Roles and Responsibilities
+
+## Overview
+The success of this project depends on cross-functional collaboration among various team members. Each role contributes unique skills that collectively ensure the project’s timely delivery, technical quality, and alignment with user needs.
+
+---
+
+| **Role** | **Key Responsibilities** | **Contribution to Project Success** |
+|-----------|--------------------------|-------------------------------------|
+| **Project Manager** | Oversees the project timeline, coordinates team efforts, monitors progress, and manages deliverables. | Ensures that milestones are met on time, resources are efficiently allocated, and communication between stakeholders remains effective. |
+| **Frontend Developers** | Implement UI components, integrate designs with functionality, and ensure responsive and accessible design across devices. | Deliver the visual and interactive aspects of the platform, ensuring the user interface is consistent with design and usability goals. |
+| **Backend Developers** | Develop APIs, manage database architecture, and implement core business logic. | Provide a stable and secure backend infrastructure that supports application performance and data integrity. |
+| **Designers** | Create wireframes, prototypes, and high-fidelity mockups; maintain the design system; ensure user experience quality. | Bridge creativity and functionality, ensuring the application is visually appealing and intuitive to use. |
+| **QA/Testers** | Develop and execute test cases, identify bugs, verify fixes, and ensure system stability before release. | Maintain the overall quality of the software, reducing post-deployment issues and ensuring a seamless user experience. |
+| **DevOps Engineers** | Manage deployment processes, CI/CD pipelines, and server infrastructure; oversee performance monitoring. | Facilitate smooth and automated deployments, enhance reliability, and maintain continuous integration efficiency. |
+| **Product Owner** | Define project requirements, prioritize feature development, and represent the needs of stakeholders and end users. | Aligns the development team with business objectives, ensuring that the product delivers real value and meets user expectations. |
+| **Scrum Master** | Facilitate agile ceremonies, remove blockers, and support effective collaboration within the team. | Promotes efficiency and transparency within the agile process, ensuring consistent progress and team morale. |
