@@ -364,3 +364,49 @@ Represents feedback left by users who have completed a stay at a property.
 ## Summary
 This database schema ensures that all major interactions—such as property management, booking, payment processing, and review submission—are efficiently managed through well-defined relationships. The design promotes scalability, data integrity, and simplified querying for analytics and reporting.
 
+# Feature Breakdown
+
+## Overview
+This section provides a detailed overview of the main features and subsystems that define the project’s core functionality. Each feature is designed to enhance user experience, ensure operational efficiency, and support scalable backend interactions.
+
+---
+
+### 1. API Documentation
+The backend APIs are documented using the **OpenAPI standard**, providing a clear and standardized structure for developers to understand available endpoints and their expected inputs and outputs.  
+Through **Django REST Framework** and **GraphQL**, the system enables both RESTful and flexible query-based access to data, ensuring seamless integration with frontend applications and third-party services.
+
+---
+
+### 2. User Authentication
+The authentication system allows users to register, log in, and manage their profiles securely through endpoints such as `/users/` and `/users/{user_id}/`.  
+It ensures that only verified users can access specific features, maintaining privacy, data protection, and account integrity throughout the platform.
+
+---
+
+### 3. Property Management
+Accessible via endpoints like `/properties/` and `/properties/{property_id}/`, this module allows property owners to create, update, retrieve, and delete property listings.  
+It serves as the foundation of the platform’s content, enabling hosts to manage listings effectively and ensuring that users always have access to accurate and up-to-date property information.
+
+---
+
+### 4. Booking System
+Through endpoints `/bookings/` and `/bookings/{booking_id}/`, users can create, modify, and manage bookings, including specifying check-in and check-out dates.  
+This feature simplifies the reservation process, reduces scheduling conflicts, and maintains an accurate log of all user transactions.
+
+---
+
+### 5. Payment Processing
+The `/payments/` endpoint handles secure and efficient payment transactions related to bookings.  
+It ensures that all financial activities are properly tracked, supports multiple payment methods, and provides real-time status updates for successful, pending, or failed transactions.
+
+---
+
+### 6. Review System
+Endpoints `/reviews/` and `/reviews/{review_id}/` allow users to post, view, and manage reviews for properties they’ve booked.  
+This system fosters transparency and trust by enabling users to share authentic feedback, while property owners gain valuable insights to improve service quality.
+
+---
+
+### 7. Database Optimizations
+The backend employs **indexing** for faster query performance and **caching** to minimize database load and improve system responsiveness.  
+These optimizations ensure that frequently accessed data, such as property listings and user sessions, are retrieved quickly, enhancing the overall performance and scalability of the platform.
