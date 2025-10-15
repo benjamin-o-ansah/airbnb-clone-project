@@ -48,3 +48,30 @@ The design planning emphasizes usability, accessibility, and responsiveness acro
 A user-friendly booking system plays a critical role in reducing friction throughout the customer journey. An intuitive and visually clear interface enhances trust, improves accessibility, and simplifies complex actions such as searching, selecting, and booking a property.  
 By prioritizing usability and responsive design, the system ensures that users across all devices enjoy a seamless experience, which leads to increased conversion rates, repeat visits, and overall customer satisfaction.
 
+## Figma Design Specifications
+
+### Color Styles
+- **Primary:** `#FF5A5F`  
+- **Secondary:** `#008489`  
+- **Background:** `#FFFFFF`  
+- **Text:** `#222222`  
+- **Secondary Text:** `#717171`
+
+### Typography
+- **Primary Font:** Circular  
+- **Headings:** Circular, Bold (700), 24px–32px  
+- **Body Text:** Circular, Medium (500), 16px  
+- **Secondary Text:** Circular, Book (400), 14px
+
+---
+
+## Importance of Identifying Design Properties
+Understanding and documenting design properties—such as color styles, typography, and layout—ensures visual consistency across all parts of the application. These properties form the foundation of a cohesive design system that improves usability and brand recognition.
+
+Identifying design properties from mockups allows developers and designers to:
+- Maintain alignment between the prototype and the implemented product.  
+- Streamline collaboration between design and development teams.  
+- Achieve consistent aesthetics and accessibility across screens.  
+- Reduce design inconsistencies and rework during implementation.  
+
+Accurate documentation of these properties enables faster development, better scalability, and a uniform user experience across devices and platforms.
